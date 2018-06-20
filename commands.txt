@@ -1,0 +1,6 @@
+kubectl describe pod podname
+kubectl get pods
+kubectl get services
+kubectl get nodes
+kubectl describe node
+kubectl expose pod nodehelloworld.example.com --type=NodePort --name=nodejs-service
