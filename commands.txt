@@ -5,4 +5,5 @@ kubectl get nodes
 kubectl describe node
 kubectl expose pod nodehelloworld.example.com --type=NodePort --name=nodejs-service
 kubectl port-forward nodehelloworld.example.com 8081:3000
-kubectl apply -f <>.yaml
+kubectl create -f <>.yaml
+kubectl get pods --all-namespaces
