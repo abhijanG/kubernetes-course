@@ -7,3 +7,5 @@ kubectl expose pod nodehelloworld.example.com --type=NodePort --name=nodejs-serv
 kubectl port-forward nodehelloworld.example.com 8081:3000
 kubectl create -f <>.yaml
 kubectl get pods --all-namespaces
+kubectl get rc
+kubectl scale --replicas=4 rc/helloworld-controller
